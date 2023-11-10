@@ -9,6 +9,7 @@ public class AeroSurface : MonoBehaviour
     public bool IsControlSurface;
     public ControlInputType InputType;
     public float InputMultiplyer = 1;
+    public AeroMesh aeroMesh = null;
 
     private float flapAngle;
 

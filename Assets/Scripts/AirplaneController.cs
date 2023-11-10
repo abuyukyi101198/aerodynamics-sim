@@ -9,8 +9,6 @@ public class AirplaneController : MonoBehaviour
     [SerializeField]
     List<AeroSurface> controlSurfaces = null;
     [SerializeField]
-    List<GameObject> flapObjects = null;
-    [SerializeField]
     List<WheelCollider> wheels = null;
     [SerializeField]
     float rollControlSensitivity = 0.2f;
@@ -99,27 +97,30 @@ public class AirplaneController : MonoBehaviour
     public void SetControlSurfecesAngles(float pitch, float roll, float yaw, float flap)
     {
         AeroSurface surface;
-        GameObject flapObject;
 
         for (int i = 0; i < controlSurfaces.Count; i++)
         {
             surface = controlSurfaces[i];
-            flapObject = flapObjects[i];
 
             if (surface == null || !surface.IsControlSurface) continue;
+
             switch (surface.InputType)
             {
                 case ControlInputType.Pitch:
                     surface.SetFlapAngle(pitch * pitchControlSensitivity * surface.InputMultiplyer);
+                    surface.aeroMesh.SetMeshAngle(pitch * surface.InputMultiplyer * 15f);
                     break;
                 case ControlInputType.Roll:
                     surface.SetFlapAngle(roll * rollControlSensitivity * surface.InputMultiplyer);
+                    surface.aeroMesh.SetMeshAngle(roll * surface.InputMultiplyer * 15f);
                     break;
                 case ControlInputType.Yaw:
                     surface.SetFlapAngle(yaw * yawControlSensitivity * surface.InputMultiplyer);
+                    surface.aeroMesh.SetMeshAngle(yaw * surface.InputMultiplyer * 15f);
                     break;
                 case ControlInputType.Flap:
-                    surface.SetFlapAngle(Flap * surface.InputMultiplyer);
+                    surface.SetFlapAngle(flap * surface.InputMultiplyer);
+                    surface.aeroMesh.SetMeshAngle(flap * surface.InputMultiplyer * 15f);
                     break;
             }
         }

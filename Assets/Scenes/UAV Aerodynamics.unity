@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 12556941}
   - component: {fileID: 12556942}
   m_Layer: 0
-  m_Name: RRuddervator_0
+  m_Name: Ruddervator_Inboard.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,14 +217,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 12556940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: f736d0bece87c4497a5bf66ec1e73ec7, type: 2}
   IsControlSurface: 1
   InputType: 0
   InputMultiplyer: 1
-  aeroMesh: {fileID: 560933058}
+  aeroMesh: {fileID: 560933060}
 --- !u!1 &14897308
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 14897309}
   - component: {fileID: 14897310}
   m_Layer: 0
-  m_Name: LRuddervator_1
+  m_Name: Ruddervator_Outboard.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,14 +266,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 14897308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: f736d0bece87c4497a5bf66ec1e73ec7, type: 2}
   IsControlSurface: 1
   InputType: 1
   InputMultiplyer: -1
-  aeroMesh: {fileID: 240981089}
+  aeroMesh: {fileID: 240981091}
 --- !u!1 &103473528
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 103473529}
   - component: {fileID: 103473530}
   m_Layer: 0
-  m_Name: RFlap_0
+  m_Name: Flap_Inboard.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,20 +315,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 103473528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 127508d42a4d940a7bd5b77485064aec, type: 2}
   IsControlSurface: 1
   InputType: 3
   InputMultiplyer: 1
-  aeroMesh: {fileID: 1718792462}
+  aeroMesh: {fileID: 1718792464}
 --- !u!1 &232006116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4536132156529248907, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &232006118
+--- !u!114 &232006120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,16 +337,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 232006116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 0
 --- !u!1 &240981087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1770981785575469786, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &240981089
+--- !u!114 &240981091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -355,10 +354,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 240981087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 2
 --- !u!1 &264847153
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +368,7 @@ GameObject:
   - component: {fileID: 264847154}
   - component: {fileID: 264847155}
   m_Layer: 0
-  m_Name: LRuddervator_0
+  m_Name: Ruddervator_Inboard.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -400,14 +398,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 264847153}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: f736d0bece87c4497a5bf66ec1e73ec7, type: 2}
   IsControlSurface: 1
   InputType: 0
   InputMultiplyer: 1
-  aeroMesh: {fileID: 1044471237}
+  aeroMesh: {fileID: 1044471239}
 --- !u!1 &292799017
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +559,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -7924920439189528475, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &418307674
+--- !u!114 &418307676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -570,10 +568,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 418307672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 0
 --- !u!1 &426713799
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +609,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -6028384770978331892, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &560933058
+--- !u!114 &560933060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -621,10 +618,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 560933056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 2
 --- !u!1 &667240082
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +873,7 @@ GameObject:
   - component: {fileID: 826060750}
   - component: {fileID: 826060751}
   m_Layer: 0
-  m_Name: RAileron
+  m_Name: Aileron.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -907,14 +903,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 826060749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 43f5e5c8c76ca4da197bcf4a0a10786b, type: 2}
   IsControlSurface: 1
   InputType: 2
   InputMultiplyer: -1
-  aeroMesh: {fileID: 1933736868}
+  aeroMesh: {fileID: 1933736870}
 --- !u!1 &841314940
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +950,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1671483184183816319, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &916212087
+--- !u!114 &916212089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -963,10 +959,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 916212085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 0
 --- !u!1 &954331928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,17 +1201,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 3000
   aerodynamicSurfaces:
-  - {fileID: 1297472018}
-  - {fileID: 103473530}
-  - {fileID: 1388080679}
-  - {fileID: 1839729987}
   - {fileID: 1278947800}
-  - {fileID: 826060751}
-  - {fileID: 1618805409}
+  - {fileID: 1297472018}
+  - {fileID: 1388080679}
   - {fileID: 264847155}
   - {fileID: 14897310}
+  - {fileID: 826060751}
+  - {fileID: 103473530}
+  - {fileID: 1839729987}
   - {fileID: 12556942}
-  - {fileID: 1593766639}
+  - {fileID: 1593766641}
+  - {fileID: 1618805409}
 --- !u!114 &983753060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,16 +1225,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlSurfaces:
+  - {fileID: 1278947800}
   - {fileID: 1297472018}
   - {fileID: 1388080679}
-  - {fileID: 1278947800}
-  - {fileID: 103473530}
-  - {fileID: 1839729987}
-  - {fileID: 826060751}
   - {fileID: 264847155}
   - {fileID: 14897310}
+  - {fileID: 826060751}
+  - {fileID: 103473530}
+  - {fileID: 1839729987}
   - {fileID: 12556942}
-  - {fileID: 1593766639}
+  - {fileID: 1593766641}
   wheels:
   - {fileID: 1150769170}
   - {fileID: 2147186890}
@@ -1252,6 +1247,7 @@ MonoBehaviour:
   Yaw: 0
   Roll: 0
   Flap: 0
+  Thrust: 0
   displayText: {fileID: 2134879055}
 --- !u!1 &1003545391
 GameObject:
@@ -1361,7 +1357,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7078552247159577851, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1044471237
+--- !u!114 &1044471239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1370,16 +1366,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044471235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 5
 --- !u!1 &1046594811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7027277064284138814, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1046594813
+--- !u!114 &1046594815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1388,10 +1383,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1046594811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 0
 --- !u!1 &1150769168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,7 +1682,7 @@ GameObject:
   - component: {fileID: 1278947799}
   - component: {fileID: 1278947800}
   m_Layer: 0
-  m_Name: LAileron
+  m_Name: Aileron.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,14 +1712,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1278947798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 43f5e5c8c76ca4da197bcf4a0a10786b, type: 2}
   IsControlSurface: 1
   InputType: 2
   InputMultiplyer: 1
-  aeroMesh: {fileID: 1046594813}
+  aeroMesh: {fileID: 1046594815}
 --- !u!1 &1297472016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1731,7 @@ GameObject:
   - component: {fileID: 1297472017}
   - component: {fileID: 1297472018}
   m_Layer: 0
-  m_Name: LFlap_0
+  m_Name: Flap_Inboard.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1767,14 +1761,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1297472016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 127508d42a4d940a7bd5b77485064aec, type: 2}
   IsControlSurface: 1
   InputType: 3
   InputMultiplyer: 1
-  aeroMesh: {fileID: 232006118}
+  aeroMesh: {fileID: 232006120}
 --- !u!1 &1355409082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1916,34 +1910,34 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7027277064284138814, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1046594813}
+      addedObject: {fileID: 1046594815}
     - targetCorrespondingSourceObject: {fileID: -2202682250624905589, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1933736868}
+      addedObject: {fileID: 1933736870}
     - targetCorrespondingSourceObject: {fileID: -4536132156529248907, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 232006118}
+      addedObject: {fileID: 232006120}
     - targetCorrespondingSourceObject: {fileID: -2817474719909484797, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1718792462}
+      addedObject: {fileID: 1718792464}
     - targetCorrespondingSourceObject: {fileID: 1671483184183816319, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 916212087}
+      addedObject: {fileID: 916212089}
     - targetCorrespondingSourceObject: {fileID: -7924920439189528475, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 418307674}
+      addedObject: {fileID: 418307676}
     - targetCorrespondingSourceObject: {fileID: 7078552247159577851, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1044471237}
+      addedObject: {fileID: 1044471239}
     - targetCorrespondingSourceObject: {fileID: -6028384770978331892, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 560933058}
+      addedObject: {fileID: 560933060}
     - targetCorrespondingSourceObject: {fileID: 1770981785575469786, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 240981089}
+      addedObject: {fileID: 240981091}
     - targetCorrespondingSourceObject: {fileID: -6916703187985962090, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1760486088}
+      addedObject: {fileID: 1760486090}
   m_SourcePrefab: {fileID: 100100000, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
 --- !u!4 &1364505277 stripped
 Transform:
@@ -1961,7 +1955,7 @@ GameObject:
   - component: {fileID: 1388080678}
   - component: {fileID: 1388080679}
   m_Layer: 0
-  m_Name: LFlap_1
+  m_Name: Flap_Outboard.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1991,14 +1985,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1388080677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: ea7577b68954c4ad6b8926aab94b5bd4, type: 2}
   IsControlSurface: 1
   InputType: 3
   InputMultiplyer: 1
-  aeroMesh: {fileID: 916212087}
+  aeroMesh: {fileID: 916212089}
 --- !u!1 &1482968485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,31 +2106,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593766640}
-  - component: {fileID: 1593766639}
+  - component: {fileID: 1593766641}
   m_Layer: 0
-  m_Name: RRuddervator_1
+  m_Name: Ruddervator_Outboard.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1593766639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593766638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: f736d0bece87c4497a5bf66ec1e73ec7, type: 2}
-  IsControlSurface: 1
-  InputType: 1
-  InputMultiplyer: 1
-  aeroMesh: {fileID: 1760486088}
 --- !u!4 &1593766640
 Transform:
   m_ObjectHideFlags: 0
@@ -2152,6 +2129,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2047418870}
   m_LocalEulerAnglesHint: {x: 40, y: -90, z: 0}
+--- !u!114 &1593766641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593766638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config: {fileID: 11400000, guid: f736d0bece87c4497a5bf66ec1e73ec7, type: 2}
+  IsControlSurface: 1
+  InputType: 1
+  InputMultiplyer: 1
+  aeroMesh: {fileID: 1760486090}
 --- !u!1 &1618805407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,7 +2187,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618805407}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: 7e0ee07625f164ebcb1384f36f0c1211, type: 2}
@@ -2206,7 +2200,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -2817474719909484797, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1718792462
+--- !u!114 &1718792464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2215,10 +2209,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1718792460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 0
 --- !u!1 &1736945761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,7 +2270,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -6916703187985962090, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1760486088
+--- !u!114 &1760486090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2286,10 +2279,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1760486086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 5
 --- !u!1 &1839729985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,7 +2293,7 @@ GameObject:
   - component: {fileID: 1839729986}
   - component: {fileID: 1839729987}
   m_Layer: 0
-  m_Name: RFlap_1
+  m_Name: Flap_Outboard.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2331,69 +2323,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1839729985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
+  m_Script: {fileID: 11500000, guid: d0fa6bb5674a54f808f6721ee963781c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   config: {fileID: 11400000, guid: ea7577b68954c4ad6b8926aab94b5bd4, type: 2}
   IsControlSurface: 1
   InputType: 3
   InputMultiplyer: 1
-  aeroMesh: {fileID: 418307674}
---- !u!1 &1899857039
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1899857040}
-  - component: {fileID: 1899857041}
-  m_Layer: 0
-  m_Name: Body
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1899857040
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899857039}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.5129171, y: -0.5129171, z: 0.4867402, w: 0.4867402}
-  m_LocalPosition: {x: 0, y: 0.261, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2047418870}
-  m_LocalEulerAnglesHint: {x: 93, y: 0, z: 90}
---- !u!114 &1899857041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899857039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d4bea785fe45989bfc345dc80ad1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  config: {fileID: 11400000, guid: 1194ecfd329224b1c8e48cce210b5405, type: 2}
-  IsControlSurface: 0
-  InputType: 0
-  InputMultiplyer: 1
-  aeroMesh: {fileID: 0}
+  aeroMesh: {fileID: 418307676}
 --- !u!1 &1933736866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2202682250624905589, guid: 9d07947cab99e4da0bdf091e2465637e, type: 3}
   m_PrefabInstance: {fileID: 1364505276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1933736868
+--- !u!114 &1933736870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2402,10 +2345,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1933736866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b81b0a254e1449c4f827e34d74e8a2ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 54c976b89c1ae483db7d19a79265a452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAxis: 0
 --- !u!1 &2047418869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,18 +2377,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1899857040}
-  - {fileID: 1618805408}
-  - {fileID: 1297472017}
-  - {fileID: 1388080678}
-  - {fileID: 103473529}
-  - {fileID: 1839729986}
-  - {fileID: 1278947799}
   - {fileID: 826060750}
+  - {fileID: 1278947799}
+  - {fileID: 1297472017}
+  - {fileID: 103473529}
+  - {fileID: 1388080678}
+  - {fileID: 1839729986}
   - {fileID: 264847154}
-  - {fileID: 14897309}
   - {fileID: 12556941}
+  - {fileID: 14897309}
   - {fileID: 1593766640}
+  - {fileID: 1618805408}
   m_Father: {fileID: 983753057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2057241572 stripped
@@ -2720,8 +2661,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1557659595}
-  - {fileID: 1003545395}
-  - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 983753057}
+  - {fileID: 1003545395}
   - {fileID: 1251009643}
+  - {fileID: 983753057}
+  - {fileID: 963194228}

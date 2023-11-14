@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public static class AeroCoefficients {
@@ -12,7 +11,6 @@ public static class AeroCoefficients {
     {
         Vector3 aerodynamicCoefficients;
 
-        // Low angles of attack mode and stall mode curves are stitched together by a line segment. 
         float paddingAngleHigh = Mathf.Deg2Rad * Mathf.Lerp(15, 5, (Mathf.Rad2Deg * flapAngle + 50) / 100);
         float paddingAngleLow = Mathf.Deg2Rad * Mathf.Lerp(15, 5, (-Mathf.Rad2Deg * flapAngle + 50) / 100);
         float paddedStallAngleHigh = stallAngleHigh + paddingAngleHigh;
@@ -20,20 +18,17 @@ public static class AeroCoefficients {
 
         if (angleOfAttack < stallAngleHigh && angleOfAttack > stallAngleLow)
         {
-            // Low angle of attack mode.
             aerodynamicCoefficients = CalculateCoefficientsAtLowAoA(angleOfAttack, correctedLiftSlope, zeroLiftAoA, config);
         }
         else
         {
             if (angleOfAttack > paddedStallAngleHigh || angleOfAttack < paddedStallAngleLow)
             {
-                // Stall mode.
                 aerodynamicCoefficients = CalculateCoefficientsAtStall(
                     angleOfAttack, correctedLiftSlope, zeroLiftAoA, stallAngleHigh, stallAngleLow, flapAngle, config);
             }
             else
             {
-                // Linear stitching in-between stall and low angles of attack modes.
                 Vector3 aerodynamicCoefficientsLow;
                 Vector3 aerodynamicCoefficientsStall;
                 float lerpParam;

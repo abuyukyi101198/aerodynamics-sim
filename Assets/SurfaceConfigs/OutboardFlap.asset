@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31715efe11db04612b48084a15d49e69, type: 3}
-  m_Name: Flap_0
+  m_Name: OutboardFlap
   m_EditorClassIdentifier: 
   liftSlope: 6.8
   skinFriction: 0.02
   zeroLiftAoA: -3
   stallAngleHigh: 15
   stallAngleLow: -15
-  chord: 1.27
+  chord: 0.9
   flapFraction: 0.26
-  span: 2.7
+  span: 2.9
   autoAspectRatio: 1
-  aspectRatio: 2.1259844
+  aspectRatio: 3.2222223

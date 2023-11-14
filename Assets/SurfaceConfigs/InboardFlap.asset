@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31715efe11db04612b48084a15d49e69, type: 3}
-  m_Name: Flap_1
+  m_Name: InboardFlap
   m_EditorClassIdentifier: 
   liftSlope: 6.8
   skinFriction: 0.02
   zeroLiftAoA: -3
   stallAngleHigh: 15
   stallAngleLow: -15
-  chord: 0.9
+  chord: 1.27
   flapFraction: 0.26
-  span: 2.9
+  span: 2.7
   autoAspectRatio: 1
-  aspectRatio: 3.2222223
+  aspectRatio: 2.1259844
